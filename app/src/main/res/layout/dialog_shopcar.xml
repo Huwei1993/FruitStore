@@ -26,9 +26,9 @@
         android:text="库存剩余："
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_residueNum_shop_car_dialog"
         />
         <TextView
+            android:id="@+id/tv_residueNum_shop_car_dialog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5"
@@ -82,26 +82,6 @@
             android:layout_height="wrap_content"
             android:text="总价："
             />
-    </LinearLayout>
-    <!--下面的两个按钮-->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/btn_scancle_car_shop_dialog"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="取消"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/btn_ok_car_shop_dialog"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="确定"
-            />
-
     </LinearLayout>
 
 </LinearLayout>
