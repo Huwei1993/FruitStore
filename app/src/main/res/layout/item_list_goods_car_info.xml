@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_item_list_goods_car_info"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" />
+
+        <ImageView
+            android:id="@+id/iv_pic_item_list_goods_car_info"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/sahngcai" />
+
+        <LinearLayout
+            android:id="@+id/ll_edt_item_list_goods_car_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_des_item_list_goods_car_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品描述信aidssdasdiaacskjai息\n sadjn"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_parameter_item_list_goods_car_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="类型参数描adasafaf述\n 类型参数"
+                android:textColor="@color/gray_border"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_price_item_list_goods_car_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="￥156" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+                <!--销量-->
+
+                <TextView
+                    android:textSize="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="销量/月(单位：件)"
+                    />
+                <TextView
+                    android:paddingLeft="2dp"
+                    android:paddingRight="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="200"
+                    android:textSize="10sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:paddingRight="20dp"
+                    android:text="X" />
+
+                <TextView
+                    android:id="@+id/tv_num_item_list_goods_car_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="20dp"
+                    android:text="3"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <!--默认不可见-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_success_item_list_goods_car_info"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_reduce_num_gone_item_list_goods_car_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="#000"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/tv_num_gone_item_list_goods_car_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/gray_border"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_add_gone_item_list_goods_car_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+  <!--  <LinearLayout
+        android:id="@+id/ll_edt_item_list_goods_car_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_des_item_list_goods_car_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品描述信aidssdasdiaacskjai息\n sadjn"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_parameter_item_list_goods_car_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类型参数描adasafaf述\n 类型参数"
+            android:textColor="@color/gray_border"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_price_item_list_goods_car_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥156" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingRight="20dp"
+                android:text="X" />
+
+            <TextView
+                android:id="@+id/tv_num_item_list_goods_car_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:text="3"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+    </LinearLayout>
+-->
+</LinearLayout>
