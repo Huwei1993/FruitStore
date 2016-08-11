@@ -81,13 +81,14 @@ public class Testdb {
             Goods goods = new Goods();
             goods.setId(1+i);
             goods.setNum(11+i);
+            goods.setSalesNum(200+i);
             goods.setName("商品名称"+i);
             goods.setAttention(1000+i);
             goods.setCatalogueId(1+i);
             goods.setEvaluateBad(2+i);
             goods.setEvaluateGood(100+i);
             goods.setPrice(20.00+i);
-            goods.setResidueNum(1000); //  剩余商品数量
+            goods.setResidueNum(100+i); //  剩余商品数量
             listGoods.add(goods);
             //  订单信息
             Indent indent = new Indent();

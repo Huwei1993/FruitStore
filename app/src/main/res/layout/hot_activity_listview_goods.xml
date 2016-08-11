@@ -1,14 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
 <TextView
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="热销商品"
-    android:id="@+id/tv_list_hot_action_activity"
+    android:gravity="center_horizontal"
+    android:background="#492d2d"
+    android:textColor="@color/white"
     />
-
-
+    <ImageView
+        android:id="@+id/iv_hot_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sahngcai"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.shayne.fruitstore.utils.IconFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fire"
+            android:textSize="30sp"
+            android:textColor="@color/red"
+            />
+        <!--商品价格-->
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格:"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/tv_count_price_hot_activity_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200"
+            />
+        <TextView
+            android:id="@+id/tv_true_price_hot_activity_fragment"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:text="商品名称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_list_hot_action_activity"
+            />
+        <com.shayne.fruitstore.utils.IconFontTextView
+            android:id="@+id/tv_add_shoppingCar_hot_activity"
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addShoppingCar"
+            android:textColor="@color/gray_border"
+            android:textSize="30sp"
+            />
+    </LinearLayout>
 
 </LinearLayout>

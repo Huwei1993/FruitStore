@@ -8,6 +8,35 @@ public class TrueOrFalse {
     private boolean isRemember;   //  判断是否记住密码
     private boolean isRadioChecked;  //  判断是否选择加入购物车
     private boolean isRadioAllChecked;   //  判断是否全选
+    private boolean isStoreShops;     //  是否收藏商品
+    private boolean isAddShopCar;    //  是否加入购物车
+    private boolean isOrders;      //  是否下订单
+
+    public boolean isStoreShops() {
+        return isStoreShops;
+    }
+
+    public void setStoreShops(boolean storeShops) {
+        isStoreShops = storeShops;
+    }
+
+    public boolean isAddShopCar() {
+        return isAddShopCar;
+    }
+
+    public void setAddShopCar(boolean addShopCar) {
+        isAddShopCar = addShopCar;
+    }
+
+    public boolean isOrders() {
+        return isOrders;
+    }
+
+    public void setOrders(boolean orders) {
+        isOrders = orders;
+    }
+
+
 
     public boolean isloading() {
         return isloading;
