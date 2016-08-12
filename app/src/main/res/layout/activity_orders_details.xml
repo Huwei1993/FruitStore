@@ -5,97 +5,189 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.shayne.fruitstore.activity.OrdersDetailsActivity">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#59b557"
-        >
-        <com.shayne.fruitstore.utils.IconFontTextView
-            android:id="@+id/tv_return_left_goods_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/left"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="订单详情"
-       android:paddingLeft="20dp"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        />
-    </LinearLayout>
-    <!--用户名称 以及联系方式-->
-    <LinearLayout
-        android:paddingLeft="49dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="收货人"
-            android:textSize="12sp"
-            />
-        <TextView
-            android:id="@+id/tv_userName_activity_orders_details"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="雷杰情"
-            android:paddingLeft="10dp"
-            android:textSize="12sp"
-            />
-
-        <TextView
-            android:id="@+id/tv_userPhone_activity_orders_details"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="13569586456"
-            android:textSize="12sp"
-            android:gravity="end"
-            android:paddingRight="40dp"
-            />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <com.shayne.fruitstore.utils.IconFontTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/address"
-            android:textSize="40sp"
-            android:textColor="@color/blue"
-            />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#59b557"
+            android:orientation="horizontal">
+
+            <com.shayne.fruitstore.utils.IconFontTextView
+                android:id="@+id/tv_return_left_goods_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/left"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="订单详情"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <!--用户名称 以及联系方式-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="49dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收货人"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_userName_activity_orders_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="雷杰情"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_userPhone_activity_orders_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingRight="40dp"
+                android:text="13569586456"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.shayne.fruitstore.utils.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textColor="@color/blue"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="福建省厦门市集美区软件园三期D003\n公寓317宿舍福建省厦门市集美区软件园三期D003\n公寓317宿舍"
-                    android:textSize="15sp"
                     android:maxLines="2"
-                    />
+                    android:text="福建省厦门市集美区软件园三期D003\n公寓317宿舍福建省厦门市集美区软件园三期D003\n公寓317宿舍"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <com.shayne.fruitstore.utils.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/right"
+                android:textColor="@color/gray_border"
+                android:textSize="30sp" />
+
         </LinearLayout>
-        <com.shayne.fruitstore.utils.IconFontTextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/right"
-            android:textSize="30sp"
-            android:textColor="@color/gray_border"
-            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_goods_detailscar_info" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买数量：(千克)"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/btn_reduce_car_shop_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="-"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_shop_num_car_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_add_car_shop_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="+"
+                android:textSize="20sp" />
+        </LinearLayout>
+
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#a9a3a6"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="合计："
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="￥"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="156.00"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="提交订单"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
 </LinearLayout>
